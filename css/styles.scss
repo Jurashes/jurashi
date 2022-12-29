@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	max-width: 1365px;
+	min-width: 1365px;
+}
+.nav{
+	width: 100%;
+	height: auto;
+	.top-nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 5px 70px;
+		background-color: #E0E0E0;
+		.left_top{
+			svg{
+				margin: 0 10px;
+			}
+		}
+		.right_top{
+			a{
+				color: black;
+				text-decoration: none;
+				margin: 0 10px;
+			}
+			#top_a{
+				padding-right: 15px;
+				border-right: 1px solid black;
+			}
+			.a_top{
+				z-index: 1;
+				background-color: white;
+				transition: 5s ease;
+				display: none;
+				width: 160px;
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+				padding: 10px 10px;
+				position: absolute;
+				top: 40px;
+
+				h2{
+					margin: 5px 0px;
+				}
+				ul{
+					li{
+						margin: 10px 0;
+						list-style-type: none;
+						a{
+							margin: 5px 0;
+							color: gray;
+						}
+					}
+				}
+			}
+			.aa_top{
+				display: block;
+			}
+		}
+	}
+	.bot-nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		padding: 5px 70px;
+		.left_bot{
+			img{
+				width: 80px;
+				margin: 5px 0;
+			}
+		}
+		.cen_bot{
+			.cen_ul{
+				display: flex;
+				align-items: center;
+				.cen_li{
+					list-style-type: none;
+					.box_one{
+						transition-duration: 5s;
+						cursor: pointer;
+						margin: 10px 0;
+						flex-wrap: wrap;
+						display: none;
+						justify-content: center;
+						border-bottom: 1px solid #E0E0E0;
+						position: absolute;
+						top: 70px;
+						left: 0;
+						width: 100%;
+						height: 60vh;
+						background-color: white;
+						.one_one{
+							margin: 20px 35px;
+							h1{
+								padding: 5px 0;
+								a{
+									text-decoration: none;
+									color: black;
+								}
+							}
+							.box-ul{
+								.box-li{
+									padding: 5px 0;
+									list-style-type: none;
+									.box-a{
+										padding: 5px 0;
+										text-decoration: none;
+										color: black;
+									}
+								}
+							}
+						}
+					}
+					.cen_a{
+						transition-duration: 2s;
+						padding: 11px 0;
+						margin: 5px 15px;
+						color: black;
+						font-size: 1.2rem;
+						text-decoration: none;
+						&:hover{
+							border-bottom: 1px solid black;
+						}
+					}
+				}
+				.cen_li:hover .box_one{
+					display: flex;
+				}
+			}
+		}
+		.right_bot{
+			display: flex;
+			align-items: center;
+			input{
+				background-color: #E0E0E0;
+				width: 100px;
+				border: none;
+				height: 20px;
+				padding: 10px 35px;
+				border-radius: 20px;
+				font-size: 1rem;
+				outline: none;
+			}
+			#hh_one{
+				position: absolute;
+				right: 280px;
+				top: 50px;
+			}
+			svg{
+				margin: 0 10px;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+				font-size: 1.2rem;
+				display: none;
+			}
+			#hamburger{
+				display: none;
+			}
+		}
+	}
+}
+.nike_names{
+	background-color: white;
+	z-index: 11;
+	display: none;
+	position: absolute;
+	left: 30%;
+	p{
+		padding: 5px 0;
+	}
+	h1{
+		padding: 5px 0;
+	}
+}
+
+.ff_pred{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 90%;
+	height: 40vh;
+	background-image: url(../img/one.webp);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	p{
+		padding-top: 40px;
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.2rem;
+		}
+	}
+	h1{
+		margin-bottom: 5px;
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 3rem;
+		}
+	}
+	h5{
+		margin: 5px 0;
+		a{
+			color: white;
+			font-size: 1.2rem;
+			text-decoration: none;
+		}
+	}
+	button{
+		margin: 20px 0;
+		border-radius: 20px;
+		padding: 10px 25px;
+		font-size: 1rem;
+		border: none;
+	}
+	button:hover{
+		background-color: gray;
+	}
+}
+
+// @media screen and (max-width: 900px) {
+//   .nav{
+//   	.bot-nav{
+//   		.cen_bot{
+//   			display: none;
+//   			.cen_ul{
+//   				display: block;
+//   			}
+//   		}
+//   		.right_bot{
+//   			#hamburger{
+//   				position: absolute;
+//   				right: 40px;
+//   				top: 50px;
+//   				display: block;
+//   			}
+//   			#hh_two{
+//   				display: none;
+//   			}
+//   			#hh_one{
+//   				position: absolute;
+//   				right: 100px;
+//   			}
+//   		}
+//   	}
+//   }
+// }
